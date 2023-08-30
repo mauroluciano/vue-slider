@@ -18,8 +18,17 @@
     <div id="app">
       <div class="container">
         <div class="card">
-          <img :src="'./' + images.image" alt="" />
+          <img :src="'./img/' + images[activeImg].image" alt="" />
         </div>
+        <button @click="prev()">prev</button>
+        <button @click="next()">next</button>
+      </div>
+      <div>
+        <img
+          v-for="(image) in images"
+          :src="'./img/' + images[image]"
+          alt=""
+          class="img-thumbnail" />
       </div>
     </div>
   </body>

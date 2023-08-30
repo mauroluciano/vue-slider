@@ -17,7 +17,9 @@
   <body>
     <div id="app">
       <div class="container">
-        <img v-for="(obj, index) in poster" :src="obj.activeImg" alt="" />
+        <div class="card">
+          <img :src="'./' + images.image" alt="" />
+        </div>
       </div>
     </div>
   </body>

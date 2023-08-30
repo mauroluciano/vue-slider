@@ -23,7 +23,7 @@
         <button @click="prev()">prev</button>
         <button @click="next()">next</button>
       </div>
-      <div v-for="image in images.image" class="thumbnail">
+      <div v-for="image in images" class="thumbnail d-inline">
         <img
           :src="'./img/' + images[activeImg].image"
           class="img-thumbnail thumb"
